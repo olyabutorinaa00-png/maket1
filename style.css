@@ -1,0 +1,77 @@
+:root {
+  /* Цвета */
+  --color-bg: #67001E;
+  --color-text: #FFEBED;
+
+  /* Шрифты */
+  --font-heading: 'Cormorant', serif;
+  --font-size-heading: 200px;
+  --font-weight-heading: 400;
+
+  /* Отступы блока: top right bottom left */
+  --padding-top: 90px;
+  --padding-right: 160px;
+  --padding-bottom: 65px;
+  --padding-left: 65px;
+
+  /* Ширина контента */
+  --content-width: 260px;
+
+  /* Расстояние между элементами (не было в спеке, см. список предположений) */
+  --gap: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 706px;
+  background-color: var(--color-bg);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom) var(--padding-left);
+  overflow: hidden;
+}
+
+.hero__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding-top: var(--padding-top);
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-heading);
+  font-size: var(--font-size-heading);
+  line-height: 0.85;
+  color: var(--color-text);
+  text-align: left;
+  word-break: break-all;
+  white-space: normal;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero__photo {
+  position: absolute;
+  top: 108px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--content-width);
+  aspect-ratio: 260 / 398;
+  margin: 0;
+  background-color: #000000;
+  z-index: 2;
+}
+
+.hero__photo-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
