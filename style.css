@@ -5,7 +5,7 @@
   --about-text: #67001E;
   --about-bg: #FFEBED;
   
-  /* Шрифты */
+  /* Шрифт главный экран */
   --font-heading: 'Cormorant', serif;
   --font-size-heading: 200px;
   --font-weight-heading: 400;
@@ -23,14 +23,14 @@
   --about-font-body-weight: 400;
   --about-font-body-line-height: normal;
 
-  /* Отступы блока: top right bottom left */
+  /* Отступы блока 1: top right bottom left */
   --padding-top: 0px;
   --padding-right: 160px;
   --padding-bottom: 65px;
   --padding-left: 65px;
-  --letter-overflow: 200px; /* чем больше цифра — тем сильнее текст "вылезает" за края */
+  --letter-overflow: 80px; /* чем больше цифра — тем сильнее текст "вылезает" за края */
   
-  /* Отступы блока: top right bottom left */
+  /* Отступы блока 2: top right bottom left */
   --about-padding-top: 70px;
   --about-padding-right: 50px;
   --about-padding-bottom: 65px;
@@ -43,7 +43,7 @@
   /* Расстояние между элементами (не было в спеке, см. список предположений) */
   --gap: 0px;
   
-   /* Расстояние между элементами */
+   /* Расстояние между элементами в тексте */
   --about-gap: 15px;
 }
 
