@@ -64,7 +64,7 @@ body {
 
 .hero__title-line--WED {
   text-align: right;
-  transform: translateX(var(--letter-overflow));
+  transform: translateX(var(--letter-overflow : 45 px));
 }
 
 .hero__title-line--DING {
