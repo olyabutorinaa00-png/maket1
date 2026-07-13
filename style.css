@@ -13,6 +13,7 @@
   --padding-right: 160px;
   --padding-bottom: 65px;
   --padding-left: 65px;
+  --letter-overflow: 40px; /* чем больше цифра — тем сильнее текст "вылезает" за края */
 
   /* Ширина контента */
   --content-width: 260px;
@@ -64,12 +65,12 @@ body {
 
 .hero__title-line--WED {
   text-align: right;
-  transform: translateX(var(--letter-overflow : 45 px));
+  transform: translateX(var(--letter-overflow));
 }
 
 .hero__title-line--DING {
   text-align: left;
-  transform: translateX(calc(var(--letter-overflow: 45 px) * -1));
+  transform: translateX(calc(var(--letter-overflow) * -1));
 }
 
 .hero__photo {
