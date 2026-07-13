@@ -59,7 +59,7 @@ body {
   position: relative;
   width: 100%;
   height: 706px;
-  background-color: var(--color-bg);
+  background-color: var(--hero-bg);
   padding: var(--padding-top) var(--padding-right) var(--padding-bottom) var(--padding-left);
   overflow: hidden;
 }
@@ -76,7 +76,7 @@ body {
   font-weight: var(--font-weight-heading);
   font-size: var(--font-size-heading);
   line-height: 0.85;
-  color: var(--color-text);
+  color: var(--about-text);
   text-transform: uppercase;
   z-index: 1;
   pointer-events: none;
