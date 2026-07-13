@@ -1,12 +1,27 @@
 :root {
   /* Цвета */
-  --color-bg: #67001E;
-  --color-text: #FFEBED;
-
+  --hero-bg: #67001E;
+  --hero-text: #67001E;
+  --about-text: #67001E;
+  --about-bg: #FFEBED;
+  
   /* Шрифты */
   --font-heading: 'Cormorant', serif;
   --font-size-heading: 200px;
   --font-weight-heading: 400;
+  
+   /* Шрифт заголовка */
+  --about-font-heading: 'Cormorant', serif;
+  --about-font-heading-size: 30px;
+  --about-font-heading-weight: 600;
+  --about-font-heading-line-height: 0.95;
+  --about-font-heading-letter-spacing: 0;
+  
+  /* Шрифт текста */
+  --about-font-body: 'Inter', sans-serif;
+  --about-font-body-size: 16px;
+  --about-font-body-weight: 400;
+  --about-font-body-line-height: normal;
 
   /* Отступы блока: top right bottom left */
   --padding-top: 0px;
@@ -14,12 +29,22 @@
   --padding-bottom: 65px;
   --padding-left: 65px;
   --letter-overflow: 200px; /* чем больше цифра — тем сильнее текст "вылезает" за края */
-
+  
+  /* Отступы блока: top right bottom left */
+  --about-padding-top: 70px;
+  --about-padding-right: 50px;
+  --about-padding-bottom: 65px;
+  --about-padding-left: 65px;
+  
   /* Ширина контента */
   --content-width: 260px;
+  --about-content-width: 260px;
 
   /* Расстояние между элементами (не было в спеке, см. список предположений) */
   --gap: 0px;
+  
+   /* Расстояние между элементами */
+  --about-gap: 15px;
 }
 
 * {
@@ -90,4 +115,39 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.about {
+  margin: 0;
+}
+
+.greeting {
+  width: 100%;
+  background-color: var(--about-bg);
+  padding: var(--about-padding-top) var(--about-padding-right) var(--about-padding-bottom) var(--about-padding-left);
+}
+
+.greeting__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--about-gap);
+  width: var(--about-content-width);
+}
+
+.greeting__title {
+  margin: 0;
+  font-family: var(--about-font-heading);
+  font-weight: var(--about-font-heading-weight);
+  font-size: var(--about-font-heading-size);
+  line-height: var(--about-font-heading-line-height);
+  letter-spacing: var(--about-font-heading-letter-spacing);
+  color: var(--about-text);
+}
+
+.greeting__text {
+  margin: 0;
+  font-family: var(--about-font-body);
+  font-weight: var(--about-font-body-weight);
+  font-size: var(--about-font-body-size);
+  line-height: var(--about-font-body-line-height);
+  color: var(--about-text);
 }
