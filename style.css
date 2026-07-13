@@ -69,7 +69,7 @@ body {
 
 .hero__title-line--DING {
   text-align: left;
-  transform: translateX(calc(var(--letter-overflow) * -1));
+  transform: translateX(calc(var(--letter-overflow: 45 px) * -1));
 }
 
 .hero__photo {
