@@ -45,16 +45,32 @@ body {
   width: 100%;
   margin: 0;
   padding-top: var(--padding-top);
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-heading);
   font-weight: var(--font-weight-heading);
   font-size: var(--font-size-heading);
   line-height: 0.85;
   color: var(--color-text);
-  text-align: left;
-  word-break: break-all;
-  white-space: normal;
+  text-transform: uppercase;
   z-index: 1;
   pointer-events: none;
+}
+
+.hero__title-line {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.hero__title-line--wed {
+  text-align: right;
+  transform: translateX(var(--letter-overflow));
+}
+
+.hero__title-line--ding {
+  text-align: left;
+  transform: translateX(calc(var(--letter-overflow) * -1));
 }
 
 .hero__photo {
