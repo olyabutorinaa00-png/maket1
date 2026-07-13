@@ -62,12 +62,12 @@ body {
   margin: 0;
 }
 
-.hero__title-line--wed {
+.hero__title-line--WED {
   text-align: right;
   transform: translateX(var(--letter-overflow));
 }
 
-.hero__title-line--ding {
+.hero__title-line--DING {
   text-align: left;
   transform: translateX(calc(var(--letter-overflow) * -1));
 }
