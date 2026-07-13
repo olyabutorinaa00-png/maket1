@@ -13,7 +13,7 @@
   --padding-right: 160px;
   --padding-bottom: 65px;
   --padding-left: 65px;
-  --letter-overflow: 40px; /* чем больше цифра — тем сильнее текст "вылезает" за края */
+  --letter-overflow: 200px; /* чем больше цифра — тем сильнее текст "вылезает" за края */
 
   /* Ширина контента */
   --content-width: 260px;
