@@ -41,6 +41,10 @@
   --date-font-number: 'Inter', sans-serif;
   --date-font-number-size: 30px;
   --date-font-number-weight: 400;
+  .date__number--accent {
+  color: var(--date-accent);
+  font-weight: var(--date-font-number-weight-accent);
+}
 
   /* Отступы блока 1: top right bottom left */
   --padding-top: 0px;
