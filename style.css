@@ -83,6 +83,15 @@
   
    /* Расстояние между элементами в тексте */
   --about-gap: 30px;
+
+   /* Отступы блока: top right bottom left */
+  --invitation-padding-top: 50px;
+  --invitation-padding-right: 70px;
+  --invitation-padding-bottom: 65px;
+  --invitation-padding-left: 65px;
+
+  /* Ширина контента */
+  --invitation-content-width: 260px;
 }
 
 * {
@@ -247,4 +256,19 @@ body {
 
 .date__number--accent {
   color: var(--date-accent);
+}
+.invitation {
+  width: 100%;
+  background-color: var(--about-bg);
+  padding: var(--invitation-padding-top) var(--invitation-padding-right) var(--invitation-padding-bottom) var(--invitation-padding-left);
+}
+
+.invitation__text {
+  margin: 0;
+  width: var(--invitation-content-width);
+  font-family: var(--about-font-body);
+  font-weight: var(--about-font-body-weight);
+  font-size: var(--about-font-body-size);
+  line-height: var(--about-font-body-line-height);
+  color: var(--about-text);
 }
