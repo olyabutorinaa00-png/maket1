@@ -4,11 +4,19 @@
   --hero-text: #FFEBED;
   --about-text: #67001E;
   --about-bg: #FFEBED;
+  --date-bg: #FFEBED;
+  --date-text: #67001E;
+  --date-accent: #A70707;
   
   /* Шрифт главный экран */
   --font-heading: 'Cormorant', serif;
   --font-size-heading: 200px;
   --font-weight-heading: 400;
+  --date-font-heading: 'Cormorant', serif;
+  --date-font-heading-size: 18px;
+  --date-font-heading-weight: 400;
+  --date-font-heading-line-height: 0.95;
+  --date-font-heading-letter-spacing: 0;
   
   
    /* Шрифт заголовка */
@@ -23,6 +31,16 @@
   --about-font-body-size: 16px;
   --about-font-body-weight: 400;
   --about-font-body-line-height: normal;
+
+    /* Шрифт текста (подпись месяца) */
+  --date-font-month: 'Inter', sans-serif;
+  --date-font-month-size: 16px;
+  --date-font-month-weight: 400;
+
+  /* Шрифт текста (число) */
+  --date-font-number: 'Inter', sans-serif;
+  --date-font-number-size: 30px;
+  --date-font-number-weight: 400;
 
   /* Отступы блока 1: top right bottom left */
   --padding-top: 0px;
@@ -43,6 +61,21 @@
 
   /* Расстояние между элементами (не было в спеке, см. список предположений) */
   --gap: 0px;
+
+   /* Отступы блока: top right bottom left */
+  --date-padding-top: 1px;
+  --date-padding-right: 1px;
+  --date-padding-bottom: 0px;
+  --date-padding-left: 0px;
+
+  /* Ширина ячейки в середине */
+  --date-middle-cell-width: 150px;
+
+  /* Ширина контента */
+  --date-content-width: 260px;
+
+  /* Толщина и цвет линий сетки */
+  --date-border-width: 1px;
   
    /* Расстояние между элементами в тексте */
   --about-gap: 40px;
@@ -151,4 +184,63 @@ body {
   font-size: var(--about-font-body-size);
   line-height: var(--about-font-body-line-height);
   color: var(--about-text);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.date {
+  width: 100%;
+  background-color: var(--date-bg);
+  padding: var(--date-padding-top) var(--date-padding-right) var(--date-padding-bottom) var(--date-padding-left);
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.date th,
+.date td {
+  border: var(--date-border-width) solid var(--date-text);
+  text-align: center;
+  color: var(--date-text);
+}
+
+.date th:nth-child(2),
+.date td:nth-child(2) {
+  width: var(--date-middle-cell-width);
+}
+
+.date__weekday {
+  padding: 8px 4px;
+  font-family: var(--date-font-heading);
+  font-weight: var(--date-font-heading-weight);
+  font-size: var(--date-font-heading-size);
+  line-height: var(--date-font-heading-line-height);
+  letter-spacing: var(--date-font-heading-letter-spacing);
+  text-transform: uppercase;
+}
+
+.date__month {
+  padding: 8px 4px 0;
+  font-family: var(--date-font-month);
+  font-weight: var(--date-font-month-weight);
+  font-size: var(--date-font-month-size);
+}
+
+.date__month--accent {
+  color: var(--date-accent);
+}
+
+.date__number {
+  padding: 0 4px 8px;
+  font-family: var(--date-font-number);
+  font-weight: var(--date-font-number-weight);
+  font-size: var(--date-font-number-size);
+}
+
+.date__number--accent {
+  color: var(--date-accent);
 }
