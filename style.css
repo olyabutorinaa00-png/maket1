@@ -75,10 +75,10 @@
   --date-content-width: 260px;
 
   /* Толщина и цвет линий сетки */
-  --date-border-width: 1px;
+  --date-border-width: 2px;
   
    /* Расстояние между элементами в тексте */
-  --about-gap: 40px;
+  --about-gap: 30px;
 }
 
 * {
